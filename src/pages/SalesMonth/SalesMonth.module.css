@@ -1,0 +1,59 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 2rem; */
+    height: calc(100vh - 80px);
+}
+
+.monthYear {
+    text-align: center;
+}
+
+.options {
+    padding: 30px;
+}
+
+.option {
+    width: 15rem;
+    height: 5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    margin: 20px 0 40px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option:hover {
+    background-color: #e0e0e0;
+}
+
+.icon {
+    margin: 0.5rem;
+    transform: scale(1.5);
+    color: black;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 960px) {
+    .option {
+        width: 20rem;
+        height: 8rem;
+        font-size: 1.7rem;
+    }
+
+    .icon {
+        margin: 1.2rem;
+        transform: scale(1.8);
+    }
+}
